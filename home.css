@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    
+        background-image: url('front.jpeg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }
+    
+
+
+header {
+    background-color: #034d5ff6;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color:#333;
+}
+nav ul {    
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background:rgb(145, 81, 145);; 
+    padding: 10px;
+
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.moving-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textAnimation 10s linear infinite;
+}
+@keyframes textAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400% 400%;
+    }
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.learning-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #009900;
+}
+
+button {
+    background-color: #009900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006600;
+}
+
+img {
+    max-width: 100%;
+    display: none;
+}
